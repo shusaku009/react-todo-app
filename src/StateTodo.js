@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './StateTodo.css'
 
 let maxId = 0;
 
@@ -22,6 +23,19 @@ function StateTodo() {
     ]);
   };
 
+  const handleDone = e => {
+    setTodo(todo.map(item => {
+      if (item.id === Number(e.target.dataset.id)) {
+        return {
+          ...item,
+          isDone: true
+        };
+      } else {
+        return item;
+      }
+    }));
+  };
+
   return (
     <div>
       <label>
@@ -32,10 +46,15 @@ function StateTodo() {
       <button type="button"
         onClick={handleClick}>追加</button>
       <hr />
-      {/* Todoをリストに整形 */}
       <ul>
         {todo.map(item => (
-          <li key={item.id}>{item.title}</li>
+          <li key={item.id}
+            className={item.isDone ? 'done' : ''}>
+            {item.title}
+            <button type="button"
+              onClick={handleDone} data-id={item.id}>済
+            </button>
+          </li>
         ))}
       </ul>
     </div>
