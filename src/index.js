@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import StateTodo from './StateTodo';
+import FormBasic from './FormBasic';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     <StateTodo />
+    <FormBasic />
   </React.StrictMode>
 );
 
