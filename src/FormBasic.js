@@ -4,15 +4,22 @@ import './FormBasic.css';
 function FormBasic() {
   const defaultValues = {
     name: '名無権兵衛',
-    eamil: 'admin@example.com',
+    email: 'admin@example.com',
     gender: 'male',
     memo: ''
   };
 
-  const { register, handleSubmit, formState: { errors, isDirty, isValid } } = useForm({
-    defaultValues
+  const { register, handleSubmit, formState: { errors, isDirty, isValid, isSubmitting } } = useForm({
+    defaultValues,
   });
-  const onsubmit = data => console.log(data);
+  const onsubmit = data => {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve();
+        console.log(data);
+      }, 4000);
+    });
+  };
   const onerror = err => console.log(err);
 
   return (
@@ -83,7 +90,8 @@ function FormBasic() {
         <div>{errors.memo?.message}</div>
       </div>
       <div>
-        <button type="submit" disabled={!isDirty || isValid}>送信</button>
+        <button type="submit" disabled={!isDirty || !isValid || isSubmitting}>送信</button>
+        {isSubmitting && <div>...送信中...</div>}
       </div>
     </form>
   )
