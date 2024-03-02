@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import StateTodo from './StateTodo';
 import FormBasic from './FormBasic';
+import FormYup from './FormYup';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +13,7 @@ root.render(
     {/* <App /> */}
     <StateTodo />
     <FormBasic />
+    <FormYup />
   </React.StrictMode>
 );
 
