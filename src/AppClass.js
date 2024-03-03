@@ -1,9 +1,11 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
+class AppClass extends React.Component {
+  render() {
+    return (
+      <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -15,12 +17,12 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {/* こんにちは、React！！ */}
           Learn React
         </a>
       </header>
     </div>
-  );
+    );
+  }
 }
 
-export default App;
+export default AppClass;
