@@ -6,14 +6,16 @@ import reportWebVitals from './reportWebVitals';
 import StateTodo from './StateTodo';
 import FormBasic from './FormBasic';
 import FormYup from './FormYup';
+import FormJapan from './FormJapan';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <StateTodo />
+    {/* <StateTodo /> */}
     <FormBasic />
-    <FormYup />
+    {/* <FormYup /> */}
+    <FormJapan />
   </React.StrictMode>
 );
 
