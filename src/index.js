@@ -58,7 +58,7 @@ import reportWebVitals from './reportWebVitals';
 import LazyBasic from './chap05/LazyBasic';
 import LazyMulti from './chap05/LazyMulti';
 import SuspenseSimple from './chap05/SuspenseSimple';
-// import SuspenseResult from './chap05/SuspenseResult';
+import SuspenseResult from './chap05/SuspenseResult';
 // import ProfilerBasic from './chap05/ProfilerBasic';
 // import StyledComp from './chap05/StyledComp';
 // import { MyButton, MyStyledButton } from './chap05/StyledComp2';
@@ -135,7 +135,8 @@ root.render(
     {/* <App /> */}
     {/* <LazyBasic /> */}
     {/* <LazyMulti /> */}
-    <SuspenseSimple />
+    {/* <SuspenseSimple /> */}
+    <SuspenseResult />
   </React.StrictMode>
 );
 
