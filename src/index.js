@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
-import React, { Suspense } from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { Suspense } from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 // import ProfilerBasic from './chap05/ProfilerBasic';
 
 // ■■chap02■■
@@ -56,11 +56,11 @@ import reportWebVitals from './reportWebVitals';
 // import FormJapan from './chap04/FormJapan';
 
 // ■■chap05■■
-import LazyBasic from './chap05/LazyBasic';
-import LazyMulti from './chap05/LazyMulti';
-import SuspenseSimple from './chap05/SuspenseSimple';
+import LazyBasic from "./chap05/LazyBasic";
+import LazyMulti from "./chap05/LazyMulti";
+import SuspenseSimple from "./chap05/SuspenseSimple";
 // import SuspenseResult from './chap05/SuspenseResult';
-import ProfilerBasic from './chap05/ProfilerBasic';
+import ProfilerBasic from "./chap05/ProfilerBasic";
 // import StyledComp from './chap05/StyledComp';
 // import { MyButton, MyStyledButton } from './chap05/StyledComp2';
 // import StyledCommon from './chap05/StyledCommon';
@@ -90,8 +90,8 @@ import ProfilerBasic from './chap05/ProfilerBasic';
 // import QuerySuspense from './chap06/QuerySuspense';
 
 // ■■chap07■■
-// import StateEffect from './chap07/StateEffect';
-// import HookTimer from './chap07/HookTimer';
+import StateEffect from "./chap07/StateEffect";
+import HookTimer from './chap07/HookTimer';
 // import HookEffect from './chap07/HookEffect';
 // import HookRefNg from './chap07/HookRefNg';
 // import HookRef from './chap07/HookRef';
@@ -128,7 +128,7 @@ import ProfilerBasic from './chap05/ProfilerBasic';
 // import MyStore from './column/MyStore';
 /* eslint-enable no-unused-vars */
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // #region ■■chap02■■
 root.render(
@@ -531,9 +531,7 @@ root.render(
 //   <SuspenseResult />
 // );
 
-root.render(
-  <ProfilerBasic />
-);
+// root.render(<ProfilerBasic />);
 
 // root.render(
 //   <StyledComp />
@@ -661,20 +659,18 @@ root.render(
 // #endregion
 
 // #region ■■chap07■■
-// root.render(
-//   <StateEffect init={0} />
-// );
+// root.render(<StateEffect init={0} />);
 
-// root.render(
-//   <HookTimer init={10} />
-// );
+root.render(
+  <HookTimer init={10} />
+);
 
 // root.render(
 //   <HookEffect init={10} />
 // );
 
 // root.render(
-//   <HookRefNg />
+// <HookRefNg />
 // );
 
 // root.render(
@@ -682,11 +678,11 @@ root.render(
 // );
 
 // root.render(
-//   <HookRefForward />
+//  <HookRefForward />
 // );
 
 // root.render(
-//   <HookCallbackRef />
+//  <HookCallbackRef />
 // );
 
 // root.render(
@@ -702,13 +698,13 @@ root.render(
 // );
 
 // root.render(
-//   <HookContext />
+//  <HookContext />
 // );
 
 // root.render(
 //   <MyThemeProvider>
 //     <HookThemeButton />
-//   </MyThemeProvider>
+//  </MyThemeProvider>
 // );
 
 // root.render(
@@ -720,13 +716,13 @@ root.render(
 // root.render(
 //   <RecoilRoot>
 //     <RecoilTodo />
-//   </RecoilRoot>
+//  </RecoilRoot>
 // );
 
 // root.render(
 //   <RecoilRoot>
 //     <RecoilTodoUp />
-//   </RecoilRoot>
+//  </RecoilRoot>
 // );
 
 // root.render(
@@ -783,7 +779,6 @@ root.render(
 //   <MyStore />
 // );
 // #endregion
-
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
