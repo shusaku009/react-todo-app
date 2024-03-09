@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import ProfilerBasic from './chap05/ProfilerBasic';
 
 // ■■chap02■■
 // import AppClass from './AppClass';
@@ -58,8 +59,8 @@ import reportWebVitals from './reportWebVitals';
 import LazyBasic from './chap05/LazyBasic';
 import LazyMulti from './chap05/LazyMulti';
 import SuspenseSimple from './chap05/SuspenseSimple';
-import SuspenseResult from './chap05/SuspenseResult';
-// import ProfilerBasic from './chap05/ProfilerBasic';
+// import SuspenseResult from './chap05/SuspenseResult';
+import ProfilerBasic from './chap05/ProfilerBasic';
 // import StyledComp from './chap05/StyledComp';
 // import { MyButton, MyStyledButton } from './chap05/StyledComp2';
 // import StyledCommon from './chap05/StyledCommon';
@@ -136,7 +137,7 @@ root.render(
     {/* <LazyBasic /> */}
     {/* <LazyMulti /> */}
     {/* <SuspenseSimple /> */}
-    <SuspenseResult />
+    {/* <SuspenseResult /> */}
   </React.StrictMode>
 );
 
@@ -530,9 +531,9 @@ root.render(
 //   <SuspenseResult />
 // );
 
-// root.render(
-//   <ProfilerBasic />
-// );
+root.render(
+  <ProfilerBasic />
+);
 
 // root.render(
 //   <StyledComp />
