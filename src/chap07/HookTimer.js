@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './HookTimer.css';
+import './ookTimer.css';
 
 export default function HookTimer({ init }) {
   const [count, setCount] = useState(init);

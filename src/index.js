@@ -91,10 +91,10 @@ import ProfilerBasic from "./chap05/ProfilerBasic";
 
 // ■■chap07■■
 import StateEffect from "./chap07/StateEffect";
-import HookTimer from './chap07/HookTimer';
-// import HookEffect from './chap07/HookEffect';
+// import HookTimer from './chap07/HookTimer';
+import HookEffect from './chap07/HookEffect';
 // import HookRefNg from './chap07/HookRefNg';
-// import HookRef from './chap07/HookRef';
+import HookRef from './chap07/HookRef';
 // import HookRefForward from './chap07/HookRefForward';
 // import HookCallbackRef from './chap07/HookCallbackRef';
 // import HookReducer from './chap07/HookReducer';
@@ -104,7 +104,7 @@ import HookTimer from './chap07/HookTimer';
 // import MyThemeProvider from './chap07/MyThemeProvider';
 // import HookThemeButton from './chap07/HookThemeButton';
 // import { RecoilRoot } from 'recoil';
-// import RecoilCounter from './chap07/RecoilCounter';
+// import RecoilCounter from './chap07/RecoilCou.currentnter';
 // import RecoilTodo from './chap07/RecoilTodo';
 // import RecoilTodoUp from './chap07/RecoilTodoUp';
 // import HookMemo from './chap07/HookMemo';
@@ -661,21 +661,21 @@ root.render(
 // #region ■■chap07■■
 // root.render(<StateEffect init={0} />);
 
-root.render(
-  <HookTimer init={10} />
-);
+// root.render(
+//   <HookTimer init={10} />
+// );
 
 // root.render(
 //   <HookEffect init={10} />
 // );
 
 // root.render(
-// <HookRefNg />
+//   <HookRefNg />
 // );
 
-// root.render(
-//   <HookRef />
-// );
+root.render(
+  <HookRef />
+);
 
 // root.render(
 //  <HookRefForward />
