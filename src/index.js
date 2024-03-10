@@ -98,7 +98,7 @@ import HookRef from './chap07/HookRef';
 import HookRefForward from './chap07/HookRefForward';
 import HookCallbackRef from './chap07/HookCallback';
 import HookReducer from './chap07/HookReducer';
-// import HookReducerUp from './chap07/HookReducerUp';
+import HookReducerUp from './chap07/HookReducerUp';
 // import HookReducerInit from './chap07/HookReducerInit';
 // import HookContext from './chap07/HookContext';
 // import MyThemeProvider from './chap07/MyThemeProvider';
@@ -685,13 +685,13 @@ root.render(
 //   <HookCallbackRef />
 // );
 
-root.render(
-  <HookReducer init={0} />
-);
-
 // root.render(
-//   <HookReducerUp init={0} />
+//   <HookReducer init={0} />
 // );
+
+root.render(
+  <HookReducerUp init={0} />
+);
 
 // root.render(
 //   <HookReducerInit init={0} />
