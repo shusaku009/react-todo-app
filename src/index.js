@@ -96,7 +96,7 @@ import HookEffect from './chap07/HookEffect';
 // import HookRefNg from './chap07/HookRefNg';
 import HookRef from './chap07/HookRef';
 import HookRefForward from './chap07/HookRefForward';
-// import HookCallbackRef from './chap07/HookCallbackRef';
+import HookCallbackRef from './chap07/HookCallbackRef';
 // import HookReducer from './chap07/HookReducer';
 // import HookReducerUp from './chap07/HookReducerUp';
 // import HookReducerInit from './chap07/HookReducerInit';
@@ -677,13 +677,13 @@ root.render(
 //   <HookRef />
 // );
 
-root.render(
-  <HookRefForward />
-);
-
 // root.render(
-//  <HookCallbackRef />
+//   <HookRefForward />
 // );
+
+root.render(
+  <HookCallbackRef />
+);
 
 // root.render(
 //   <HookReducer init={0} />
