@@ -100,7 +100,7 @@ import HookCallbackRef from './chap07/HookCallback';
 import HookReducer from './chap07/HookReducer';
 import HookReducerUp from './chap07/HookReducerUp';
 import HookReducerInit from './chap07/HookReducerInit';
-// import HookContext from './chap07/HookContext';
+import HookContext from './chap07/HookContext';
 // import MyThemeProvider from './chap07/MyThemeProvider';
 // import HookThemeButton from './chap07/HookThemeButton';
 // import { RecoilRoot } from 'recoil';
@@ -693,13 +693,13 @@ root.render(
 //   <HookReducerUp init={0} />
 // );
 
-root.render(
-  <HookReducerInit init={0} />
-);
-
 // root.render(
-//  <HookContext />
+//   <HookReducerInit init={0} />
 // );
+
+root.render(
+  <HookContext />
+);
 
 // root.render(
 //   <MyThemeProvider>
