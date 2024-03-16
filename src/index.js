@@ -103,8 +103,8 @@ import HookReducerInit from './chap07/HookReducerInit';
 // import HookContext from './chap07/HookContext';
 import MyThemeProvider from './chap07/MyThemeProvider';
 import HookThemeButton from './chap07/HookThemeButton';
-// import { RecoilRoot } from 'recoil';
-// import RecoilCounter from './chap07/RecoilCou.currentnter';
+import { RecoilRoot } from 'recoil';
+import RecoilCounter from './chap07/RecoilCounter';
 // import RecoilTodo from './chap07/RecoilTodo';
 // import RecoilTodoUp from './chap07/RecoilTodoUp';
 // import HookMemo from './chap07/HookMemo';
@@ -701,17 +701,17 @@ root.render(
 //   <HookContext />
 // );
 
-root.render(
-  <MyThemeProvider>
-    <HookThemeButton />
-  </MyThemeProvider>
-);
-
 // root.render(
-//   <RecoilRoot>
-//     <RecoilCounter />
-//   </RecoilRoot>
+//   <MyThemeProvider>
+//     <HookThemeButton />
+//   </MyThemeProvider>
 // );
+
+root.render(
+  <RecoilRoot>
+    <RecoilCounter />
+  </RecoilRoot>
+);
 
 // root.render(
 //   <RecoilRoot>
