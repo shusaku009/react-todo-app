@@ -105,7 +105,7 @@ import MyThemeProvider from './chap07/MyThemeProvider';
 import HookThemeButton from './chap07/HookThemeButton';
 import { RecoilRoot } from 'recoil';
 import RecoilCounter from './chap07/RecoilCounter';
-// import RecoilTodo from './chap07/RecoilTodo';
+import RecoilTodo from './chap07/RecoilTodo';
 // import RecoilTodoUp from './chap07/RecoilTodoUp';
 // import HookMemo from './chap07/HookMemo';
 // import HookTransition from './chap07/HookTransition';
@@ -707,17 +707,17 @@ root.render(
 //   </MyThemeProvider>
 // );
 
-root.render(
-  <RecoilRoot>
-    <RecoilCounter />
-  </RecoilRoot>
-);
-
 // root.render(
 //   <RecoilRoot>
-//     <RecoilTodo />
-//  </RecoilRoot>
+//     <RecoilCounter />
+//   </RecoilRoot>
 // );
+
+root.render(
+  <RecoilRoot>
+    <RecoilTodo />
+  </RecoilRoot>
+);
 
 // root.render(
 //   <RecoilRoot>
