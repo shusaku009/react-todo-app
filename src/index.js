@@ -106,7 +106,7 @@ import HookThemeButton from './chap07/HookThemeButton';
 import { RecoilRoot } from 'recoil';
 import RecoilCounter from './chap07/RecoilCounter';
 import RecoilTodo from './chap07/RecoilTodo';
-// import RecoilTodoUp from './chap07/RecoilTodoUp';
+import RecoilTodoUp from './chap07/RecoilTodoUp';
 // import HookMemo from './chap07/HookMemo';
 // import HookTransition from './chap07/HookTransition';
 // import HookDeferred from './chap07/HookDeferred';
@@ -713,17 +713,17 @@ root.render(
 //   </RecoilRoot>
 // );
 
-root.render(
-  <RecoilRoot>
-    <RecoilTodo />
-  </RecoilRoot>
-);
-
 // root.render(
 //   <RecoilRoot>
-//     <RecoilTodoUp />
-//  </RecoilRoot>
+//     <RecoilTodo />
+//   </RecoilRoot>
 // );
+
+root.render(
+  <RecoilRoot>
+    <RecoilTodoUp />
+  </RecoilRoot>
+);
 
 // root.render(
 //   <HookMemo />
