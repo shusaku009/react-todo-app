@@ -107,7 +107,7 @@ import { RecoilRoot } from 'recoil';
 import RecoilCounter from './chap07/RecoilCounter';
 import RecoilTodo from './chap07/RecoilTodo';
 import RecoilTodoUp from './chap07/RecoilTodoUp';
-// import HookMemo from './chap07/HookMemo';
+import HookMemo from './chap07/HookMemo';
 // import HookTransition from './chap07/HookTransition';
 // import HookDeferred from './chap07/HookDeferred';
 // import HookDeferredTransition from './chap07/HookDeferredTransition';
@@ -719,15 +719,15 @@ root.render(
 //   </RecoilRoot>
 // );
 
-root.render(
-  <RecoilRoot>
-    <RecoilTodoUp />
-  </RecoilRoot>
-);
-
 // root.render(
-//   <HookMemo />
+//   <RecoilRoot>
+//     <RecoilTodoUp />
+//   </RecoilRoot>
 // );
+
+root.render(
+  <HookMemo />
+);
 
 // root.render(
 //   <HookTransition />
