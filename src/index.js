@@ -109,9 +109,9 @@ import RecoilTodo from './chap07/RecoilTodo';
 import RecoilTodoUp from './chap07/RecoilTodoUp';
 import HookMemo from './chap07/HookMemo';
 import HookTransition from './chap07/HookTransition';
-// import HookDeferred from './chap07/HookDeferred';
-// import HookDeferredTransition from './chap07/HookDeferredTransition';
-// import HookCustom from './chap07/HookCustom';
+import HookDeferred from './chap07/HookDeferred';
+import HookDeferredTransition from './chap07/HookDeferredTransition';
+import HookCustom from './chap07/HookCustom';
 
 // ■■chap08■■
 // New Router
@@ -729,9 +729,9 @@ root.render(
 //   <HookMemo />
 // );
 
-root.render(
-  <HookTransition />
-);
+// root.render(
+//   <HookTransition />
+// );
 
 // root.render(
 //   <HookDeferred />
@@ -741,9 +741,9 @@ root.render(
 //   <HookDeferredTransition />
 // );
 
-// root.render(
-//   <HookCustom />
-// );
+root.render(
+  <HookCustom />
+);
 // #endregion
 
 // #region ■■chap08■■
